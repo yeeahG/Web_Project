@@ -39,7 +39,7 @@ ${requestScope.successMsg}
 
 <a>탈퇴하기</a>
 
-&nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/index.html">메인 화면 이동</a>
+&nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/KpizzaLogin.html">메인 화면 이동</a>
 
 </center>
 </body>
