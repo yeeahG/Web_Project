@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>K-pizza Login</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red w3-small">Login</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">x</span>
+        <img src="./images/pngwing.com.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="login" method="post">
+        <div class="w3-section">
+          <label><b>아이디</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="아이디를 입력하세요" name="id" value="tester" required>
+          <label><b>비밀번호</b></label>
+          <input class="w3-input w3-border" type="passward" placeholder="비밀번호를 입력하세요" name="pw" value="11" required>
+          
+     
+          <button class="w3-button w3-block w3-blue w3-section w3-padding" type="submit">로그인</button>
+         
+          
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> 아이디 저장
+        </div>
+      </form>
+      
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">취소</button>
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red"><a href="clientInsert.html">회원가입</a></button>
+        <span class="w3-right w3-padding w3-hide-small"><a href="#">아이디 찾기</a> / <a href="#">비밀번호 찾기</a></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+            
+</body>
+</html>
