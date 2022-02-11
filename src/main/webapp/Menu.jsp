@@ -1,13 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<%
-String url = application.getContextPath() + "/";
-%>
+<% String url = application.getContextPath() + "/"; %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Menu</title>
@@ -34,17 +32,16 @@ body, h1, h2, h3, h4, h5, h6 {
 	background-image: url("./images/pizza.jpg");
 	min-height: 90%;
 }
+
 </style>
-
 </head>
-<body>
 
+<body>
 	<!-- Menu Container -->
 	<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
 		<div class="w3-content">
 
-			<h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">THE
-				MENU</h1>
+			<h1 class="w3-center w3-jumbo" style="margin-bottom: 64px"> THE MENU</h1>
 			<p>최소 주문 금액 15,000원</p>
 			<br>
 
@@ -58,18 +55,19 @@ body, h1, h2, h3, h4, h5, h6 {
 				</a> <a href="javascript:void(0)" onclick="openMenu(event, 'Drink');">
 					<div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drink</div>
 				</a>
-
 			</div>
+
 
 			<div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
 
 				<c:forEach items="${requestScope.kpizzaMenuAll}" var="dataAll">
 					<c:if test="${dataAll.sort.equals('pizza')}">
 						<h1>
-							<b> ${dataAll.food_name} </b> <span
-								class="w3-right w3-tag w3-dark-grey w3-round">
-								${dataAll.price} <label><input type=checkbox name=chk
-									value=1></label>
+							<b> ${dataAll.food_name} </b> 
+							<span class="w3-right w3-tag w3-dark-grey w3-round">
+								${dataAll.price} 
+								<label><input type=checkbox name=pizza value=${dataAll.food_id}>
+								</label>
 							</span>
 
 						</h1>
@@ -78,22 +76,22 @@ body, h1, h2, h3, h4, h5, h6 {
 				</c:forEach>
 			</div>
 
+
 			<div id="Side" class="w3-container menu w3-padding-32 w3-white">
+			
 				<c:forEach items="${requestScope.kpizzaMenuAll}" var="dataAll">
 					<c:if test="${dataAll.sort.equals('side')}">
 						<h1>
-							<b> ${dataAll.food_name} </b> <span
-								class="w3-right w3-tag w3-dark-grey w3-round">
-								${dataAll.price} <label><input type=checkbox name=chk
-									value=1></label>
+							<b> ${dataAll.food_name} </b> 
+							<span class="w3-right w3-tag w3-dark-grey w3-round">
+								${dataAll.price} 
+								<label><input type=checkbox name=side vvalue=${dataAll.food_id}></label>
 							</span>
 
 						</h1>
 						<hr>
 					</c:if>
 				</c:forEach>
-
-
 			</div>
 
 
@@ -101,34 +99,28 @@ body, h1, h2, h3, h4, h5, h6 {
 				<c:forEach items="${requestScope.kpizzaMenuAll}" var="dataAll">
 					<c:if test="${dataAll.sort.equals('drink')}">
 						<h1>
-							<b> ${dataAll.food_name} </b> <span
-								class="w3-right w3-tag w3-dark-grey w3-round">
-								${dataAll.price} <label><input type=checkbox name=chk
-									value=1></label>
+							<b> ${dataAll.food_name} </b> 
+							<span class="w3-right w3-tag w3-dark-grey w3-round">
+								${dataAll.price} 
+								<label><input type=checkbox name=drink value=${dataAll.food_id}>
+								</label>
 							</span>
-
 						</h1>
 						<hr>
 					</c:if>
 				</c:forEach>
-
 			</div>
+			
+			
 			<br>
-
-
-
 			<p>
 			<div class="w3-right w3-hide-small">
-				<a href="javascript:void(0)"
-					onclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> 
+				<a href="javascript:void(0)" onclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> 
 					<a href="Order.jsp" class="w3-button w3-xxlarge w3-black">주문 하기</a>
 				</a>
 			</div>
 			</p>
-
 		</div>
-
-
 	</div>
 
 

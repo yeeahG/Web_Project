@@ -1,10 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<%
-String url = application.getContextPath() + "/";
-%>
+<% String url = application.getContextPath() + "/"; %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -35,21 +32,21 @@ body, h1, h2, h3, h4, h5, h6 {
 	min-height: 90%;
 }
 </style>
-
 </head>
+
+
 <body>
 	<!-- About Container -->
-	<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge"
-		id="order">
+	<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="order">
 		<div class="w3-content">
 			<h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">ORDER</h1>
 
 			<p>
-				<strong>K PIZZA 를 이용해주셔서 감사합니다 ${ requestScope.name }</strong><br> <img
-					src="./images/chef.jpg" style="width: 150px"
+				<strong> K PIZZA 를 이용해주셔서 감사합니다 </strong><br> 
+				<img src="./images/chef.jpg" style="width: 150px"
 					class="w3-circle w3-right" alt="Chef">
-				
 			</p>
+
 
 			<br>
 			<div class="w3-row w3-center w3-border w3-border-dark-grey">
@@ -80,8 +77,8 @@ body, h1, h2, h3, h4, h5, h6 {
 								<td><input type="text" name="receiveContent"></td>
 							</tr>
 							<tr>
-								<td colspan="2"><input type="submit" value="주문">&nbsp;&nbsp;&nbsp;<input
-									type="reset" value="취소"></td>
+								<td colspan="2"><input type="submit" value="주문">&nbsp;&nbsp;&nbsp;
+								<input type="reset" value="취소"></td>
 							</tr>
 						</table>
 					</form>
@@ -93,7 +90,7 @@ body, h1, h2, h3, h4, h5, h6 {
 			<div class="w3-right w3-hide-small">
 				<a href="javascript:void(0)"
 					onclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> <a
-					href="KPizza.html" class="w3-button w3-xxlarge w3-black"> 위로 가기</a>
+					href="KPizza.html" class="w3-button w3-xxlarge w3-black"> 홈으로 가기</a>
 				</a>
 			</div>
 			</p>
