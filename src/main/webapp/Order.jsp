@@ -8,11 +8,11 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Menu</title>
+<title>Order</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/819/premium/819810.png?token=exp=1644675573~hmac=7db772047276497dde3a8e73d2ca954a">
 	
 	<style>
 	body, html {
@@ -88,12 +88,10 @@
 			</div>
 
 
-
 			<p>
 			<div class="w3-right w3-hide-small">
-				<sonclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> 
+				<onclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> 
 				<a href="KPizza.html" class="w3-button w3-xxlarge w3-black"> 홈으로 가기</a>
-				</a>
 			</div>
 			</p>
 

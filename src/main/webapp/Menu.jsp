@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/819/premium/819810.png?token=exp=1644675573~hmac=7db772047276497dde3a8e73d2ca954a">
+	
 <style>
 body, html {
 	height: 100%
@@ -117,6 +119,7 @@ body, h1, h2, h3, h4, h5, h6 {
 			<div class="w3-right w3-hide-small">
 				<a href="javascript:void(0)" onclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> 
 					<a href="Order.jsp" class="w3-button w3-xxlarge w3-black">주문 하기</a>
+					<a href="KPizza.html" class="w3-button w3-xxlarge w3-black">홈으로 가기</a>
 				</a>
 			</div>
 			</p>
