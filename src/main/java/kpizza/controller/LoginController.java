@@ -23,9 +23,7 @@ public class LoginController extends HttpServlet {
 		//setAttribute로 저장한 데이터 server 콘솔에 출력
 		System.out.println(request.getAttribute("name"));
 		
-
 		response.sendRedirect("KPizza.html");
-		
 	}
 	
 }

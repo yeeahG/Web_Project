@@ -5,6 +5,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Menu</title>
@@ -12,26 +13,27 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Amatic+SC">
-<style>
-body, html {
-	height: 100%
-}
-
-body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Amatic SC", sans-serif
-}
-
-.menu {
-	display: none
-}
-
-.bgimg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("./images/pizza.jpg");
-	min-height: 90%;
-}
-</style>
+	
+	<style>
+	body, html {
+		height: 100%
+	}
+	
+	body, h1, h2, h3, h4, h5, h6 {
+		font-family: "Amatic SC", sans-serif
+	}
+	
+	.menu {
+		display: none
+	}
+	
+	.bgimg {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("./images/pizza.jpg");
+		min-height: 90%;
+	}
+	</style>
 </head>
 
 
@@ -77,7 +79,8 @@ body, h1, h2, h3, h4, h5, h6 {
 								<td><input type="text" name="receiveContent"></td>
 							</tr>
 							<tr>
-								<td colspan="2"><input type="submit" value="주문">&nbsp;&nbsp;&nbsp;
+								<td colspan="2">
+								<input type="submit" value="주문">&nbsp;&nbsp;&nbsp;
 								<input type="reset" value="취소"></td>
 							</tr>
 						</table>
@@ -88,9 +91,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 			<p>
 			<div class="w3-right w3-hide-small">
-				<a href="javascript:void(0)"
-					onclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> <a
-					href="KPizza.html" class="w3-button w3-xxlarge w3-black"> 홈으로 가기</a>
+				<sonclick="CheckboxToHidden(frm, frm.chk); frm.submit();"> 
+				<a href="KPizza.html" class="w3-button w3-xxlarge w3-black"> 홈으로 가기</a>
 				</a>
 			</div>
 			</p>

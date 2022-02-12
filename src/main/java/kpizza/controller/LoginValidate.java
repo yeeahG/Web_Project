@@ -18,10 +18,9 @@ import kpizza.model.LoginService;
 public class LoginValidate extends HttpServlet {
 
 	 public LoginValidate() {
-	    	System.out.println("LoginValidate 생성자-------");
+	    	System.out.println("---- LoginValidate 생성자 ----");
 	    }
 	   
-		
 
 		protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			System.out.println("LoginValidate doPost()");
@@ -36,8 +35,6 @@ public class LoginValidate extends HttpServlet {
 			String id = request.getParameter("id"); 
 			String pw = request.getParameter("pw");
 			
-			
-			
 			if(id != null && LoginService.checkDB(id, pw) ) {
 		
 //				response.setContentType("text/html;charset=utf-8");
@@ -46,7 +43,6 @@ public class LoginValidate extends HttpServlet {
 				//이미 데이터값까지 보유한 세션객체 획득해서 활용
 				HttpSession session = request.getSession();
 				session.setAttribute("id", id);
-				
 				response.sendRedirect("KPizza.html");
 			}else {
 				response.setContentType("text/html;charset=utf-8");
