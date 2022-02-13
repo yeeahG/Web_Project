@@ -7,35 +7,35 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Menu</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Amatic+SC">
-<link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/819/premium/819810.png?token=exp=1644675573~hmac=7db772047276497dde3a8e73d2ca954a">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	<link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/819/premium/819810.png?token=exp=1644675573~hmac=7db772047276497dde3a8e73d2ca954a">
+		
+	<style>
+	body, html {
+		height: 100%
+	}
 	
-<style>
-body, html {
-	height: 100%
-}
-
-body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Amatic SC", sans-serif
-}
-
-.menu {
-	display: none
-}
-
-.bgimg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("./images/pizza.jpg");
-	min-height: 90%;
-}
-
-</style>
+	body, h1, h2, h3, h4, h5, h6 {
+		font-family: "Amatic SC", sans-serif
+	}
+	
+	.menu {
+		display: none
+	}
+	
+	.bgimg {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("./images/pizza.jpg");
+		min-height: 90%;
+	}
+	
+	</style>
 </head>
 
 <body>

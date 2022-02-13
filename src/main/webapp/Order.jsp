@@ -80,7 +80,7 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-								<input type="submit" value="주문">&nbsp;&nbsp;&nbsp;
+								<input type="submit" value="주문"> &nbsp;&nbsp;&nbsp;
 								<input type="reset" value="취소"></td>
 							</tr>
 						</table>

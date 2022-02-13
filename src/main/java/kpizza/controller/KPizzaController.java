@@ -50,8 +50,6 @@ public class KPizzaController extends HttpServlet {
 		
 		
 		
-		
-		
 	}catch(Exception s){
 		request.setAttribute("errorMsg", s.getMessage());
 		request.getRequestDispatcher("showError.jsp").forward(request, response);
