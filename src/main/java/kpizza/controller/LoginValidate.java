@@ -43,7 +43,7 @@ public class LoginValidate extends HttpServlet {
 				//이미 데이터값까지 보유한 세션객체 획득해서 활용
 				HttpSession session = request.getSession();
 				session.setAttribute("id", id);
-				response.sendRedirect("KPizza.html");
+				response.sendRedirect("ClientIndex.html");
 			}else {
 				response.setContentType("text/html;charset=utf-8");
 				PrintWriter out = response.getWriter();
