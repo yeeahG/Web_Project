@@ -14,7 +14,7 @@ public class KPizzaService {
 	public static void notExistClient(String clientId) throws NotExistException, SQLException{
 		ClientDTO probono = ClientDAO.getClient(clientId);
 		if(probono == null){
-			throw new NotExistException("검색하진 재능기부 정보가 없습니다.");
+			throw new NotExistException("검색하신 고객 정보가 없습니다.");
 		}
 	}
 
@@ -43,7 +43,7 @@ public class KPizzaService {
 			ArrayList<MenuDTO> menuAll = MenuDAO.getAllMenus();
 		
 			if(menuAll == null){
-				throw new NotExistException("검색하는 재능기부 프로젝트가 미 존재합니다.");
+				throw new NotExistException("검색하신 메뉴가 없습니다.");
 			}
 			
 			return menuAll;
@@ -52,7 +52,7 @@ public class KPizzaService {
 		public static MenuDTO getMenu(String foodId) throws NotExistException, SQLException {
 			MenuDTO menu = MenuDAO.getMenu(foodId);
 			if(foodId == null) {
-				throw new NotExistException("검색하는 재능 기부자가 미 존재합니다.");
+				throw new NotExistException("해당 음식이 없습니다.");
 			}
 			return menu;
 		}

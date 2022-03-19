@@ -120,7 +120,7 @@ public class KPizzaController extends HttpServlet {
 		String url = "showError.jsp";
 		try {
 			request.setAttribute("kpizzaClientAll",KPizzaService.getAllClient());
-			url = "probonoProjectList.jsp";
+			url = "clientDetail.jsp";
 		}catch(Exception s){
 			request.setAttribute("errorMsg", s.getMessage());
 			s.printStackTrace();
