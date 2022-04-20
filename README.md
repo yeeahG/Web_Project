@@ -16,5 +16,6 @@ Java, Servlet
 Java, SQL, Servlet
 
 ### 기능
+![K-PIZZA](https://user-images.githubusercontent.com/97449025/164240396-ad490302-b3a7-4bb5-890c-424c7bcc2a31.png)
 
 
